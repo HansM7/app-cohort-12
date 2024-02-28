@@ -16,3 +16,13 @@
 .floating-element {
   animation: float 3s ease-in-out infinite; /* Aplicamos la animación */
 }
+
+.rodal-dialog{
+ background-color: black!important;
+ 
+ width: 70%!important;
+ height: 90%!important;
+ padding-top: 4rem!important;
+ border-radius: 1rem!important;
+}
+
