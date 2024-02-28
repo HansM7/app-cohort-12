@@ -33,8 +33,7 @@ function Students() {
     {
       id: "elihu",
       name: "Elihu Nibra",
-      pharse:
-        "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
+      pharse: "Todo lo que siempre has querido, esta al otro lado del miedo.",
     },
     {
       id: "hans",
@@ -138,10 +137,10 @@ function Students() {
               alt=""
             />
           </div>
-          <h1 className="text-violet-300 text-2xl text-center mt-8 font-semibold">
+          <h1 className="text-violet-300 text-2xl text-center mt-6 font-semibold">
             {studentTemporal.name.toUpperCase()}
           </h1>
-          <p className="text-violet-200 text-xl text-center mt-4">
+          <p className="text-violet-200 md:text-xl text-md text-center mt-4">
             {studentTemporal.pharse}
           </p>
         </div>
