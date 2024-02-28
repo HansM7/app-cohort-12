@@ -55,14 +55,25 @@ function Students() {
       pharse:
         "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
     },
+    {
+      id: "gian",
+      name: "GianCarlos",
+      pharse:
+        "La persistencia y disciplina terminaran por alcanzar el éxito, no siempre es así con el talento.",
+    },
+    {
+      id: "victor",
+      name: "Victor",
+      pharse: "El conocimiento es poder.",
+    },
   ];
 
   return (
     <>
       <Fade>
-        <div className="px-32 pt-12 z-0">
+        {/* <div className="px-32 pt-12 z-0">
           <h2 className="text-white text-3xl text-center">List cohort 12</h2>
-        </div>
+        </div> */}
         <div>
           {/* {modal ? (
             <Fade style={{ zIndex: 10000 }}>
@@ -98,7 +109,7 @@ function Students() {
             ""
           )} */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 py-12 px-12 md:px-32 relative ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 py-24 px-12 md:px-32 relative ">
             {students.map((student, index) => (
               <Fade duration={(index + 1 / 2) * 1000} key={index}>
                 <div role="button" onClick={() => handleClick(student)}>
@@ -122,7 +133,7 @@ function Students() {
         <div className="px-8 flex flex-col justify-center mb-12">
           <div className="flex justify-center">
             <img
-              className="w-[70%] max-h-[30rem] max-w-[30rem] rounded-lg opacity-100 floating-element"
+              className="w-[100%] md:w-[70%] max-h-[30rem] max-w-[30rem] rounded-lg opacity-100 floating-element"
               src={`students/${studentTemporal.id}.jpg`}
               alt=""
             />
