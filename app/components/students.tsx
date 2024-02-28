@@ -115,7 +115,7 @@ function Students() {
                 <div role="button" onClick={() => handleClick(student)}>
                   <div className="w-full  min-h-[20rem] overflow-hidden rounded-md relative group">
                     <img
-                      className="w-full min-h-[20rem] object-cover rounded-md transition-all group-hover:scale-105"
+                      className="w-full h-[22rem] object-cover rounded-md transition-all group-hover:scale-105"
                       src={`students/${student.id}.jpg`}
                       alt=""
                     />
