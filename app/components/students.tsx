@@ -85,15 +85,16 @@ function Students() {
         </div>
       </Fade>
       <Rodal visible={modal} onClose={() => setModal(!modal)}>
-        <div className="px-8 flex flex-col justify-center mb-12">
-          <div className="flex justify-center">
+        <div className="md:px-8 px-2 flex flex-col justify-center ">
+          <div className=" w-full md:max-h-[26rem] xl:max-h-[30rem]  min-h-[17rem] rounded-lg flex justify-center md:px-2 xl:px-52 px-24">
             <img
-              className="w-[100%] md:w-[70%] max-h-[30rem] max-w-[30rem] rounded-lg opacity-100 floating-element"
+              className=" rounded-lg object-cover floating-element"
               src={`students/${studentTemporal.id}.jpg`}
               alt=""
             />
           </div>
-          <h1 className="text-violet-300 text-2xl text-center mt-6 font-semibold">
+
+          <h1 className="text-violet-300 text-2xl text-center mt-4 font-semibold">
             {studentTemporal.name.toUpperCase()}
           </h1>
           <p className="text-violet-200 md:text-xl text-md text-center mt-4">
