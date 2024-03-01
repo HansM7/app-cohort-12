@@ -14,7 +14,7 @@
 }
 
 .floating-element {
-  animation: float 3s ease-in-out infinite; /* Aplicamos la animación */
+  animation: float 3s ease-in-out infinite;
 }
 
 .rodal-dialog{
@@ -34,5 +34,4 @@
     width: 90%!important;
     min-height:40rem!important;
   }
-  /*  */
 }
