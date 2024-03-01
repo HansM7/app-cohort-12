@@ -1,12 +1,9 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-function Banner({ setIsVisible }: { setIsVisible: any }) {
-  function handleClick() {
-    setIsVisible(true);
-  }
-
+function Banner() {
   return (
     <Fade duration={3000}>
       <div className="flex justify-center flex-col items-center md:gap-20 gap-8 px-4 ">
