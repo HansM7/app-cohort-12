@@ -3,10 +3,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-
 import Rodal from "rodal";
-
-// include styles
+import { students } from "./data";
 import "rodal/lib/rodal.css";
 
 function Students() {
@@ -22,50 +20,6 @@ function Students() {
     name: "",
     pharse: "",
   });
-
-  const students = [
-    {
-      id: "fernanda",
-      name: "Fernanda Moscoso",
-      pharse:
-        "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
-    },
-    {
-      id: "elihu",
-      name: "Elihu Nibra",
-      pharse: "Todo lo que siempre has querido, esta al otro lado del miedo.",
-    },
-    {
-      id: "hans",
-      name: "Hans Melchor",
-      pharse:
-        "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
-    },
-    {
-      id: "steve",
-      name: "Steve Paredes",
-      pharse:
-        "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
-    },
-
-    {
-      id: "antony",
-      name: "Antony Herrera",
-      pharse:
-        "Tu vida es tu aventura. Y la aventura que tienes por delante es un viaje para cumplir tu propio propósito y potencial.",
-    },
-    {
-      id: "gian",
-      name: "GianCarlos",
-      pharse:
-        "La persistencia y disciplina terminaran por alcanzar el éxito, no siempre es así con el talento.",
-    },
-    {
-      id: "victor",
-      name: "Victor",
-      pharse: "El conocimiento es poder.",
-    },
-  ];
 
   return (
     <>
@@ -110,7 +64,7 @@ function Students() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8 py-24 px-12 md:px-32 relative ">
             {students.map((student, index) => (
-              <Fade duration={(index + 1 / 2) * 1000} key={index}>
+              <Fade duration={(index + 1) * 500} key={index}>
                 <div role="button" onClick={() => handleClick(student)}>
                   <div className="w-full  min-h-[20rem] overflow-hidden rounded-md relative group">
                     <img
@@ -119,7 +73,9 @@ function Students() {
                       alt=""
                     />
                     <div className="absolute top-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
-                      <span className="text-white">{student.name}</span>
+                      <span className="text-white text-xl font-semibold">
+                        {student.name}
+                      </span>
                     </div>
                   </div>
                 </div>
