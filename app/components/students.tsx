@@ -86,7 +86,7 @@ function Students() {
       </Fade>
       <Rodal visible={modal} onClose={() => setModal(!modal)}>
         <div className="md:px-8 px-2 flex flex-col justify-center ">
-          <div className=" w-full md:max-h-[26rem] xl:max-h-[30rem]  min-h-[17rem] rounded-lg flex justify-center md:px-2 xl:px-52 px-4">
+          <div className=" w-full md:max-h-[26rem] xl:max-h-[30rem] sm:max-h-[24rem]  min-h-[17rem] rounded-lg flex justify-center md:px-2 xl:px-52 px-4 ">
             <img
               className=" rounded-lg object-cover floating-element"
               src={`students/${studentTemporal.id}.jpg`}
